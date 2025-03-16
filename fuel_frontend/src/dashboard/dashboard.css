@@ -1,0 +1,408 @@
+
+:root {
+    --navBg: #46b540;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navBg);
+    height: 80px;
+    padding: 10px 20px;
+    color: white;
+    
+  }
+  
+  .menu-bars {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+  
+  .nav-menu {
+    background-color: var(--navBg);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 350ms;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-menu-items {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .navbar-toggle {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-text {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    color: #f5f5f5;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .nav-text:hover {
+    background-color: #1a83ff;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+  
+  }
+  
+  .dropdown-icon {
+    margin-left: 10px;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #333;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 5px 0;
+  }
+  
+  .profile-dropdown li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .profile-dropdown li:hover {
+    background: #555;
+  }
+  
+  .nav-text {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    top: 3vh;
+  }
+  
+  .nav-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .nav-text a:hover {
+    background-color: #1a83ff;
+  }
+  
+  .nav-text svg {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    text-align: center;
+    line-height: 5vh;
+  }
+  
+  
+  .dashboard-overview {
+    text-align: center;
+    padding: 20px;
+  }
+  .overview-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .card {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .collectionSction{
+    display: flex;
+  }
+  
+  
+  .FirmSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    top: 6vh;
+  }
+  
+  .tableForm {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+  
+  .tableForm label {
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .tableForm input {
+    width: 100%;
+    height: 1.7rem;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  /* ----- Checkboxes Section ----- */
+  .checkInp {
+    display: flex;
+    flex-direction: row;
+    gap: 8px; 
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 8px;
+    align-items: center; 
+    position: relative;
+    right: 17vh;
+  }
+  
+  .checkBokContainer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    min-width: 50%; 
+    justify-content: flex-start; 
+  }
+  
+  .checkBokContainer label {
+    font-size: 14px; 
+    font-weight: 500; 
+    color: #333;
+  }
+  
+  /* Button Styling */
+  .SubmitBut {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .SubmitBut button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .SubmitBut button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .menu-bars {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+  
+    .nav-menu {
+      width: 200px;
+    }
+  
+    .nav-text {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .dashboard-content {
+      padding: 15px;
+    }
+  
+    .overview-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+      max-width: 300px;
+    }
+  
+    .tableForm {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .tableForm input {
+      height: 40px;
+    }
+  
+    .SubmitBut button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+    .nav-menu {
+      width: 180px;
+    }
+  
+  
+    .nav-text {
+      font-size: 14px;
+    }
+  
+  
+    .profile-section {
+      font-size: 16px;
+    }
+  
+  
+    .card {
+      width: 100%;
+      max-width: 280px;
+    }
+  
+    .tableForm {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .tableForm input {
+      height: 35px;
+    }
+  
+    .SubmitBut button {
+      font-size: 12px;
+      padding: 7px 10px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .FirmSection {
+      padding: 10px;
+      width: 100%;
+      top: 3vh;
+    }
+  
+    .tableForm {
+      width: 90%;
+      max-width: 400px;
+      padding: 15px;
+    }
+  
+    .checkInp {
+      flex-direction: column;
+      right: 0; 
+      width: 100%;
+    }
+  
+    .checkBokContainer {
+      width: 100%;
+    }
+  
+    .SubmitBut {
+      width: 100%;
+    }
+  
+    .SubmitBut button {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .FirmSection {
+      top: 2vh;
+      padding: 8px;
+    }
+  
+    .tableForm {
+      width: 100%;
+      max-width: 320px;
+      padding: 10px;
+    }
+  
+    .checkInp {
+      flex-direction: column;
+      width: 100%;
+  
+    }
+  
+    .SubmitBut button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  
+  
+  
+  
